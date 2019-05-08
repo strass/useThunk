@@ -1,0 +1,26 @@
+{
+  "name": "use-thunk",
+  "version": "0.1.0",
+  "description": "A react hook that emulates redux's thunk middleware",
+  "repository": "https://github.com/strass/useThunk",
+  "author": "Zak Strassberg",
+  "license": "MIT",
+  "private": false,
+  "source": "src/index.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "unpkg": "lib/index.umd.js",
+  "scripts": {
+    "prebuild": "rm -rf ./lib && mkdir lib",
+    "build": "microbundle --external react",
+    "dev": "microbundle watch --external react"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.17",
+    "microbundle": "^0.11.0",
+    "react": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
+}
